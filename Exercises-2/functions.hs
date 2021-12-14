@@ -1,3 +1,6 @@
+-- Programador: Paulo Antonio Dias de Castro
+-- Data: 14/12/2021
+
 main :: IO ()
 main = return ()
 
@@ -27,3 +30,49 @@ circleArea r = pi * (r^2)
 
 circularCrownArea :: Float -> Float -> Float
 circularCrownArea r1 r2 = pi*((r1^2)-(r2^2))
+
+cubeVolume :: Float -> Float
+cubeVolume a = a^3
+
+paralelepipedumVolume :: Float -> Float -> Float -> Float
+paralelepipedumVolume c l1 l2 = c*l1*l2
+
+regularPyramidVolume :: Float -> Float -> Float
+regularPyramidVolume ab h = (ab*h)/3
+
+sphereVolume :: Float -> Float
+sphereVolume r = (4*pi*(r^3))/3
+
+hypotenuseCalculator :: Float -> Float -> Float
+hypotenuseCalculator c1 c2 = sqrt((c1^2)+(c2^2))
+
+
+distanceToOrigin :: Int -> Int -> Float
+distanceToOrigin xa ya = sqrt(((0.0-fromIntegral xa)^2)+((0.0-fromIntegral ya)^2))
+
+distanceBetweenTwoNumbers :: Int -> Int -> Int -> Int -> Float
+distanceBetweenTwoNumbers xa ya xb yb = sqrt(((fromIntegral xb-fromIntegral xa)^2)+((fromIntegral yb-fromIntegral ya)^2))
+
+cubeOfANumber :: Int -> Int 
+cubeOfANumber n = n^3
+
+powNumberToFour :: Int -> Int 
+powNumberToFour n = quadrado(n^2)
+
+secondsToHours :: Int -> Float 
+secondsToHours sec = fromIntegral sec/3600
+
+secondsToMinutes :: Int -> Float 
+secondsToMinutes sec = secondsToHours sec*60
+
+fahrenheitToCelsius :: Double -> Double
+fahrenheitToCelsius f = ((f-32)*5)/9
+
+fahrenheitToKelvin :: Double -> Double
+fahrenheitToKelvin f = (((f-32)*5)/9)+273.15
+
+kmhToMs :: Float -> Float 
+kmhToMs km = km/3.6
+
+logicalParams1 :: Bool -> Bool -> Bool
+logicalParams1 p q = (p || q) && not(p && q)
