@@ -76,3 +76,15 @@ kmhToMs km = km/3.6
 
 logicalParams1 :: Bool -> Bool -> Bool
 logicalParams1 p q = (p || q) && not(p && q)
+
+terceiro :: [Int] -> Int
+terceiro list = list !! 2
+
+callLast :: [Char] -> Char
+callLast = last
+
+callExceptLast :: [Char] -> [Char] 
+callExceptLast = init
+
+returnFirstLetters :: [Char] -> [Char] -> [(Char, Char)]
+returnFirstLetters n1 n2 = zip [head n1] [head n2]
